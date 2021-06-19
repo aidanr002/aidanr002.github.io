@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Idea</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li>
+        <a href="index.html">Aidan Ryan</a>
+        </li>
+        <li>
+        <a href="interestinIT.html">Interest In IT</a>
+        </li>
+        <li>
+        <a href="dreamjob.html">Dream Job</a>
+        </li>
+        <li>
+        <a href="personalprofile.html">Personal Profile</a>
+        </li>
+        <li>
+        <a href="projectidea.html">Project Idea</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="heading">
+      <h1 id="pageheading">Project Idea</h1>
+      <hr>
+    </div>
+
+    <div class="overview">
+      <h2>Overview:</h2>
+      <p>The project suggested is an emergency information collation application, bringing emergency information from around the nation together to enable ease of access to everyone, no matter whether local or visitor. Such an application would also allow for emergency services and volunteers to monitor information from other jurisdictions in an informal and yet simplified approach. Furthermore, leveraging current digital technologies and by using crowd sourcing techniques, the application could enable the gathering and reporting of incidents not otherwise shared in the strict and formal emergency warnings. Additionally, provided the accuracy of the data stream, the application could be utilised to store and prompt action on emergency plans, such as shelter in place and evacuation advice.</p>
+    </div>
+
+    <button type="button" class="collapsible">Motivation</button>
+    <div class="content">
+        <p>Volunteer members of the Queensland Fire and Emergency Services often have access to only the same alerts as the public when away from their official communication streams (NSW Rural Fire Service, 2018). Given that many of these volunteers have day jobs and are required to leave to protect against bushfires, it is imperative that they be able to easily monitor and more importantly receive push notifications regarding incidents that may require their attention. In a similar line of concern, is the lack of direct and unmissable access to the information for the vast number of people not actively monitoring the radio or television and miss the current emergency alerts or who aren’t registered to receive direct emergency communications (ABC, 2012). Additionally, in the situation of events occurring on the state borders, the difference in jurisdiction makes access to information more difficult (Royal Commission, 2020). Finally, the current access to information provided by QFES is acceptable on desktop, but difficult to access on mobile platforms.</p>
+    </div>
+
+    <button type="button" class="collapsible">Project Description</button>
+    <div class="content">
+        <h3>MVP:</h3>
+        <p>MVP:
+        The application described would have two fundamental elements, a map view showcasing all incidents around the nation and second, a list view, achieving the same task.
+        These views would provide access to aggregate information from a range of sources throughout the nation. Furthermore, as part of the core functionality, push notifications based on the comparing of event location against the devices present location would be essential to ensure accurate and timely notification to users of potential or actual hazards. Special notice would need to be given to emergency alerts issued by authorities.<br> When one of these items is selected, either from the map or the list, it should include all known information. This includes a detailed description, status and the type of warning, including official recommendations. In some jurisdictions, location data is included to give a graphic representation of the event boundaries and this would be displayed where ever possible.</p>
+
+        <h3>Accessibility</h3>
+          <p>To ensure accessibility for all, several considerations would need to be made. These include:</p>
+          <ul>
+            <li>Use of clear graphics in addition to wording to identify event types</li>
+            <li>Use of different and distinct colouring to aid titles indicating severity</li>
+            <li>Multiple options for language to ensure access in the most suitable language</li>
+            <li>Low power and internet use to ensure suitability for emergency situations. Clear indication when unable to receive up to date information.</li>
+            <li>Suitability for a wide range of devices, both mobile and desktop (AusAid, 2013).</li>
+          </ul>
+
+        <h3>Expansion Items:</h3>
+        <ul>
+          <li>Notifications: <br>Notifications could be expanded by enabling the selection of a custom distance range that the user is concerned about to limit the number of false notifications.
+Furthermore, such a feature could be implemented to filter the types and severity of events recorded, namely the elimination of specific events such as vegetation fires or minor accidents from notifications leaving only major notifications behind.
+          </li>
+
+          <li>Crowd-sourced information: <br> Enabling user submissions of observations or occurrences would enable a greater range and volume of information available to other app users. It would seek to provide clarity in situations covering a wide geographic area and beyond the structured information provided by authorities. Finally, advanced technologies such as machine learning can be utilised to monitor and compile reports to provide the most accurate and complete understanding of an event based on fact rather than report, both in cause and extent (Chaves, 2019).</li>
+
+          <li>Emergency Planning: <br> Leveraging the information collated and available directly to the user, the application could assist in the planning for, and enacting of personal emergency plans. Rather than having the information source separate to the plan, the application would be able to step a user through the process based on the most recent information available to it. This would ensure that all individuals understand the relation of emergency warnings to actions and do not suffer inaction due to uncertainty or stress (Leach, 2004). </li>
+        </ul>
+    </div>
+
+    <button type="button" class="collapsible">Data Gathering</button>
+    <div class="content">
+      <ul>
+        <li>In some jurisdictions and for some emergency types, there is direct API access to the data provided by the governing body ( NSW Rural Fire Service, 2015). However, in some instances, this is not available. An example of this is the Queensland Fire and Emergency Service which provides an RSS feed that would need to be scraped from the web to access the information (Perez, 2019). </li>
+        <li>Not all bodies provide the same information and very few follow the same data structure. Henceforth, the necessity of determining which information is included and creating fail-safes for changes in the data or unexpected occurrences is essential. An example is provided below, with the QLD feed on the left and the different NSW feed on the right.</li>
+      </ul>
+      <img id="xml1" src="images/pic1xml.png" alt="XML 1" width="45%">
+      <img id="xml2" src="images/pic2xml.png" alt="XML 2" width="45%">
+    </div>
+
+    <button type="button" class="collapsible">Tools and Technology</button>
+    <div class="content">
+        <p>The application would be a mobile application that would be developed for both Android and iOS devices. Furthermore, in addition to the client end applications, a centralised server would need to be available to provide access to the information. Scalability using a service such as AWS would be essential for the eventuality of large concurrent access in significant emergencies (Shawi, 2020). This central server would also utilise numerous API’s and sub-processes to gain access to the information, ideally through direct ESCAD (Emergency Services Computer Aided Dispatch) (Morgan, 2016) access or access to a CAP-AU (Common Alerting Protocol Australia) data stream (BOM, 2018). After gathering the information, it would be responsible for compiling and authenticating information.</p>
+    </div>
+
+    <button type="button" class="collapsible">Skills Required</button>
+    <div class="content">
+        <p>There are many options available for the development of the application including application makers or direct development (Brandl, 2019). In this eventuality, a knowledge of Java and Swift would be required as well as a language for the back end, potentially Python. The hardware requirements would not present a challenge due to the proposed use of AWS or the like. However, of note is the challenge of identifying and gaining permission to use all required data streams where all have different or non-existent API’s. Furthermore, the range of programming languages required creates a challenge to be able to effectively develop for both platforms and would be among the two greatest challenges. </p>
+    </div>
+
+    <!-- Script from w3schools.com -->
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+
+    <div class="summary">
+      <h2>Project Summary:</h2>
+      <p>Elements of Project (MVP):</p>
+      <ul>
+        <li>iOS application</li>
+        <li>Android application</li>
+        <li>Desktop access to data and planning</li>
+        <li>Server to collate and deliver the information</li>
+      </ul>
+
+      <p>Challenges of Project:</p>
+      <ul>
+        <li>Difficulty of accessing data streams, both in technical terms and approval</li>
+        <li>Wide variety of programming languages and platforms required to work in unison </li>
+        <li>Liability of users and related legal issues.</li>
+      </ul>
+      <hr>
+    </div>
+
+    <div class="outcome">
+      <h2>Outcome:</h2>
+      <p>If the project were to be successful, it would enable easier access to emergency information for volunteer personal and residents / visitors alike. By enabling a single point of information, the collation would ensure that state boundaries never form a barrier to information transfer or access. Furthermore, as identified in the motivation, the direct notification of information to those who may not be otherwise aware would aid emergency evacuation and action.
+      <p>At a minimum the application keeps the curious informed and provides a base level of notification to stake holders. At best, the application can assist in lowering the damage to property and lose of life associated with a lack of information or knowledge and planning.</p>
+    </div>
+
+    <div class="footer">
+      <hr>
+      <ul>
+        <li>
+        &copy Aidan Ryan 2021
+        </li>
+        <li>
+        <a href="references.html">References</a>
+        </li>
+      </ul>
+    </div>
+
+  </body>
+</html>
